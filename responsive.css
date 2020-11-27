@@ -1,0 +1,61 @@
+
+/* ///////////////// */
+
+@media all and (max-width: 992px) {
+
+.container {
+	max-width: 767px;
+}
+
+.project-content {
+    margin: 0 0 80px;
+}
+
+.single-box {
+    width: 60%;
+    padding-top: 60%;
+}
+
+.service-box {
+    transform: translate(-4%);
+}
+
+.project-slide img {
+    width: 80%;
+}
+
+
+}
+
+
+
+@media all and ( max-width: 768px ) {
+
+.container {
+	max-width: 480px;
+}
+
+.service-box .col-lg-3 {
+    flex: 0 0 100%;
+    transform: rotate(0deg);
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0;
+}
+
+.single-box {
+    padding-top: 20%;
+    width: 20%;
+    float: left;
+    transform: rotate(45deg);
+}
+
+.single-box i {
+    font-size: 15px;
+}
+
+.single-box h5 {
+    font-size: 8px;
+}
+
+}

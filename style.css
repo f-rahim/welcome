@@ -1,0 +1,502 @@
+/* -------------------------------
+Theme Name: office site
+Theme URI: http://ooo.com/
+Description: This tamplate make with manage office
+Author: Abdur Rahim
+Author URI: https://www.facebook.com/FreelancerRahim26
+Tags:  Os
+Version: 1.0
+
+
+Table Content:
+----------------------------------------
+    1.  Typrography
+    2.  header area
+    3.  service area
+    4.  work area
+    5.  project area
+    6.  mind areaservice
+    7.  teem area
+    8.  video area
+    9.  footer area
+----------------------------------------*/
+
+/* 1. Typrography 
+---------------------------------------------*/
+
+@font-face {
+    font-family: 'Proxima Nova Alt Light';
+    src: url(fonts/Proxima Nova Alt Light.woff);
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url(fonts/Proxima Nova Bold.woff);
+}
+
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url(fonts/ProximaNova-Regular.woff);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    transition: .3s;
+    font-family: "ProximaNova-Regular";
+}
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+body,
+p {
+    color: #6C7279;
+    line-height: 1.6;
+    font-family: "ProximaNova-Regular";
+    font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Proxima Nova Bold';
+    font-weight: 700;
+    color: #233148;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+
+
+/*  2. header area start 
+--------------------------------------------------*/
+header.header-area {
+    padding: 50px 0;
+    background: url(img/bg.png) no-repeat center/ cover;
+    position: relative;
+    z-index: 9;
+}
+
+.logo a {
+    display: inline-block;
+}
+
+.welcome-text {
+    max-width: 600px;
+    margin: 200px 0;
+}
+
+.welcome-text h1 {
+    font-size: 64px;
+    color: #fff;
+}
+
+.welcome-text p {
+    font-size: 19px;
+    margin: 40px 0;
+    color: #fff;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header.header-area::before {content: '';position: absolute;width: 100%;height: 100%;background: #01020a66;z-index: -1;left: 0;top: 0;}
+
+a.button:hover {color: #f23e2c;border: 1px solid #f23e2c;}
+
+/*  2. header area end  --------------------------*/
+
+
+
+/*  3. service area start 
+--------------------------------------------------*/
+section.service-area {
+    background: #F6F6F6;
+    padding: 100px 0;
+}
+
+.service-box .row {
+    justify-content: center;
+}
+
+.single-box {
+    width: 75%;
+    background: #fff;
+    margin: 0 auto 10px;
+    transition: .3s;
+    position: relative;
+    padding-top: 75%;
+    cursor: pointer;
+}
+
+.service-box {
+    transform: translateX(-5%);
+}
+
+.single-box i {
+    margin: -15px 0 11px;
+    font-size: 25px;
+    color: #f23e2c;
+}
+
+.service-box .col-lg-3 {
+    transform: rotate(45deg);
+    flex: 0 0 26.33%;
+}
+
+.box-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.single-box h5 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 11px;
+    text-align: center;
+}
+
+.single-box:hover {
+    background: #28282E;
+}
+
+section.service-area> .container> .row {
+    align-items: center;
+}
+
+.single-box:hover h5 {
+    color: #fff;
+}
+
+h2.heading {
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 0 30px;
+}
+
+h2.heading:before {
+    width: 50px;
+    height: 3px;
+    background: #233148;
+    content: '';
+    position: absolute;
+    bottom: -5px;
+}
+/*  3. service area end  --------------------------*/
+
+
+
+/*  4. work area start 
+--------------------------------------------------*/
+section.work-area {
+    padding: 40px 0;
+}
+
+.work-content p {
+    font-size: 16px;
+    margin: 0;
+}
+/*  4. work area end  --------------------------*/
+
+
+
+/*  5. project area start 
+--------------------------------------------------*/
+section.project-area {
+    background: #28282E;
+    padding: 100px 0;
+}
+
+section.project-area .row {
+    align-items: center;
+}
+
+section.project-area .heading {
+    color: #fff;
+}
+
+section.project-area .heading:before {
+    background: #fff;
+}
+
+.project-content p {
+    color: #fff;
+}
+
+.project-slide {
+    text-align: center;
+    position: relative;
+}
+
+.project-slide img {
+    width: auto;
+    transition: 3.3s;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.navigation a {
+    display: block;
+    opacity: .5;
+}
+
+.navigation {
+    margin: 50px 0 0 0;
+}
+
+.navigation-bar li {
+    display: block;
+    width: 5px;
+    height: 23px;
+    background: #FFFFFF;
+    margin: 5px 0px;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.navigation-bar {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.project-content p {
+    margin: 50px 0;
+    font-size: 16px;
+}
+/*  5. project area end  --------------------------*/
+
+
+
+/*  6. mind area start 
+--------------------------------------------------*/
+section.mind-area {
+    padding: 100px 0;
+}
+
+.mind-content {
+    margin: 40px 0 0 0;
+}
+
+.mind-content table {
+    width: 100%;
+}
+
+.mind-content table tr th:nth-child(1), .mind-content table tr td:nth-child(1) {
+    width: 60%;
+    padding: 30px 15px;
+}
+
+.mind-content table tr th:nth-child(2), .mind-content table tr td:nth-child(2) {
+    width: 20%;
+    padding: 15px;
+}
+
+.mind-content table tr th:nth-child(3), .mind-content table tr td:nth-child(3) {
+    width: 20%;
+    padding: 15px;
+}
+
+.mind-content th {
+    text-transform: uppercase;
+}
+
+.mind-content .top-content tr {
+    border-bottom: 1px solid #dcd8d8;
+}
+
+.mind-content .discription tr {
+    border-bottom: 1px solid #dcd8d8;
+}
+
+.mind-content .discription tr p {
+    margin: 0;
+}
+
+.title {
+    text-transform: capitalize;
+}
+
+tr.mind-item {
+    position: relative;
+    display: block;
+}
+
+tr.mind-item::before {content: '';position: absolute;width: 100%;height: 100%;left: 0;top: 0;background: url(img/bg-cov.png) no-repeat center / cover;z-index: -1;opacity: 0;transition: .3s;}
+
+tr.mind-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #01101f8f;
+    z-index: -1;
+    opacity: 0;
+    transition: .3s;
+}
+
+tr.mind-item:hover::before, tr.mind-item:hover::after {
+    opacity: 1;
+}
+
+tr.mind-item:hover h4, tr.mind-item:hover td, tr.mind-item:hover p {
+    color: #fff;
+}
+
+.see-more a {
+    display: block;
+    padding: 15px;
+    color: #f56459;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.see-more a:hover {
+    color: #333;
+}
+/*  6. mind area end  --------------------------*/
+
+
+
+/*  7. teem area start 
+--------------------------------------------------*/
+section.teem-area {
+    background: #F6F6F6;
+    padding: 100px 0;
+}
+
+section.teem-area .container> .row {
+    align-items: center;
+}
+
+section.teem-area .single-box {
+    overflow: hidden;
+}
+
+section.teem-area .single-box img {
+    width: 155%;
+    object-fit: cover;
+}
+
+section.teem-area .single-box .block-box {position: absolute;width: 170%;background: #f66356e0;height: 100%;bottom: -50%;transform: scaleY(0);transition: .3s;transform-origin: bottom;}
+
+section.teem-area .single-box .block-box h5 span {
+    display: block;
+    margin: 6px 0 0 0;
+    font-size: 10px;
+}
+
+section.teem-area .single-box .block-box h5 {
+    color: #fff;
+    margin: 20px 0 0 0;
+    letter-spacing: 1px;
+}
+
+section.teem-area .single-box:hover .block-box {
+    transform: scaleY(1);
+}
+
+section.teem-area .single-box:hover {
+    background: transparent;
+}
+/*  7. teem area end  --------------------------*/
+
+
+/*  8. video area start 
+--------------------------------------------------*/
+section.video-area {
+    padding: 100px 0;
+    background: #28282E;
+    text-align: center;
+}
+
+.video-content h3 {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.video-content p {
+    margin: 30px 0 50px;
+    padding: 0 10%;
+}
+/*  8. video area end  --------------------------*/
+
+
+
+/*  9. footer area start 
+--------------------------------------------------*/
+
+
+.lets-talk a {
+    display: block;
+    background: #f25952;
+    padding: 30px;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.lets-talk {
+    text-align: center;
+}
+
+.copyright {
+    background: #28282e;
+}
+
+.copyright ul {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+/*  9. footer area end  --------------------------*/
+
